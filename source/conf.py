@@ -143,6 +143,6 @@ rst_prolog = """
 .. |minio-latest| replace:: RELEASE.2022-04-16T04-26-02Z
 .. |minio-rpm| replace:: https://dl.min.io/server/minio/release/linux-amd64/minio-20220416042602.0.0.x86_64.rpm
 .. |minio-deb| replace:: https://dl.min.io/server/minio/release/linux-amd64/minio_20220416042602.0.0_amd64.deb
-.. |subnet| replace:: `MinIO SUBNET <https://min.io/pricing?jmp=docs>`
+.. |subnet| replace:: `MinIO SUBNET <https://min.io/pricing?jmp=docs>`__
 
 """

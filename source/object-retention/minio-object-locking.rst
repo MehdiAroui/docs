@@ -208,9 +208,9 @@ the MinIO :mc:`mc` CLI, or using an S3-compatible SDK.
       model. Toggle the :guilabel:`Object Locking` selector to enable object
       locking on the bucket.
 
-      .. image:: /images/minio-console/console-bucket-create-bucket.png
+      .. image:: /images/minio-console/console-bucket-create-bucket-with-locking.png
          :width: 600px
-         :alt: MinIO Console Bucket creation
+         :alt: MinIO Console Bucket Management
          :align: center
 
    .. tab-item:: MinIO CLI
@@ -246,32 +246,24 @@ preferred SDK.
    .. tab-item:: MinIO Console
       :sync: console
 
-      Select the :guilabel:`Buckets` section of the MinIO Console to access
-      bucket creation and management functions. Select the bucket row from the
-      list of buckets. You can use the :octicon:`search` :guilabel:`Search` bar
-      to filter the list. 
+      Select the :guilabel:`Buckets` section of the MinIO Console to access bucket creation and management functions. You can use the :octicon:`search` :guilabel:`Search` bar to filter the list. 
       
       .. image:: /images/minio-console/console-bucket.png
          :width: 600px
          :alt: MinIO Console Bucket Management
          :align: center
 
-      From the :guilabel:`Bucket` view, look for the
-      :guilabel:`Retention` section and click :guilabel:`Enabled`. This section
-      is only visible if the bucket was created with object locking enabled.
+      Select the :guilabel:`Manage` button to open the bucket management view.
 
-      .. image:: /images/minio-console/console-bucket-overview.png
+      From the :guilabel:`Bucket` view, look for the :guilabel:`Retention` section and click :guilabel:`Enabled`. This section is only visible if the bucket was created with object locking enabled.
+
+      .. image:: /images/minio-console/console-bucket-manage.png
          :width: 600px
          :alt: MinIO Console Bucket Management
          :align: center
 
       From the :guilabel:`Set Retention Configuration` modal, set the 
       desired bucket default retention settings.
-
-      .. image:: /images/minio-console/console-bucket-locking-compliance.png
-         :width: 400px
-         :alt: MinIO Console Bucket Default Retention
-         :align: center
 
       - For :guilabel:`Retention Mode`, select either 
         :ref:`COMPLIANCE <minio-object-locking-compliance>` or 
@@ -324,23 +316,21 @@ WORM locked until the retention lock expires *and* the legal hold is lifted.
    .. tab-item:: MinIO Console
       :sync: console
 
-      Select the :guilabel:`Object Browser` section of the MinIO Console. Select
-      the bucket row from the list of buckets. You can use the :octicon:`search`
-      :guilabel:`Search` bar to filter the list. 
+      Select the :guilabel:`Buckets` section of the MinIO Console to access bucket creation and management functions. You can use the :octicon:`search` :guilabel:`Search` bar to filter the list. 
       
-      .. image:: /images/minio-console/console-object-browser-locking.png
+      .. image:: /images/minio-console/console-bucket.png
          :width: 600px
          :alt: MinIO Console Bucket Management
          :align: center
 
-      Browse to the object and select it to open the object details view. 
-      Click the :octicon:`pencil` icon on the :guilabel:`Legal Hold` row to
-      toggle the Legal Hold status of the object.
+      Select the :guilabel:`Browse` button to open the object browser view.
 
-      .. image:: /images/minio-console/console-object-browser-object-details.png
+      .. image:: /images/minio-console/console-object-browser.png
          :width: 600px
-         :alt: MinIO Console Bucket Default Retention
+         :alt: MinIO Console Bucket Object Browser
          :align: center
+
+      Browse to the object and select it to open the object details view. Select the :guilabel:`Legal Hold` button to toggle the Legal Hold status of the object.
 
    .. tab-item:: MinIO CLI
       :sync: cli

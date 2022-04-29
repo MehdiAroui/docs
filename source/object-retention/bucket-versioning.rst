@@ -219,22 +219,19 @@ enable versioning on only a prefix or subset of objects in a bucket.
 
    .. tab-item:: MinIO Console
 
-      Select the :guilabel:`Buckets` section of the MinIO Console to access
-      bucket creation and management functions. Select the bucket row from the
-      list of buckets. You can use the :octicon:`search` :guilabel:`Search` bar
-      to filter the list. 
+      Select the :guilabel:`Buckets` section of the MinIO Console to access bucket creation and management functions. You can use the :octicon:`search` :guilabel:`Search` bar to filter the list. 
       
       .. image:: /images/minio-console/console-bucket.png
          :width: 600px
          :alt: MinIO Console Bucket Management
          :align: center
-      
-      From the Bucket view, click the :guilabel:`Versioning`
-      field to enable versioning on the bucket.
 
-      .. image:: /images/minio-console/console-bucket-overview.png
+      Select the :guilabel:`Manage` button to open the bucket management view.      
+      Toggle the :guilabel:`Versioning` field to enable versioning on the bucket.
+
+      .. image:: /images/minio-console/console-bucket-manage.png
          :width: 600px
-         :alt: MinIO Console Bucket minio-lifecycle-management
+         :alt: MinIO Console Bucket Management
          :align: center
 
       The MinIO Console also supports enabling versioning as part of bucket
@@ -271,23 +268,19 @@ MinIO :mc:`mc` CLI, or using an S3-compatible SDK.
 
    .. tab-item:: MinIO Console
 
-      Select the :guilabel:`Buckets` section of the MinIO Console to access 
-      bucket creation and management functions. 
-      
-      Select the bucket row from the list of buckets. You can use the
-      :octicon:`search` :guilabel:`Search` bar to filter the list. 
+      Select the :guilabel:`Buckets` section of the MinIO Console to access bucket creation and management functions. You can use the :octicon:`search` :guilabel:`Search` bar to filter the list. 
       
       .. image:: /images/minio-console/console-bucket.png
          :width: 600px
          :alt: MinIO Console Bucket Management
          :align: center
-      
-      From the :guilabel:`Bucket` view, click the :guilabel:`Versioning` field 
-      to disable versioning on the bucket.
 
-      .. image:: /images/minio-console/console-bucket-overview.png
+      Select the :guilabel:`Manage` button to open the bucket management view. 
+      Select the :guilabel:`Versioning` field and follow the modal instructions to suspend versioning in the bucket.
+
+      .. image:: /images/minio-console/console-bucket-manage.png
          :width: 600px
-         :alt: MinIO Console Bucket minio-lifecycle-management
+         :alt: MinIO Console Bucket Management
          :align: center
 
       See :ref:`minio-console-admin-buckets` for more information on bucket
